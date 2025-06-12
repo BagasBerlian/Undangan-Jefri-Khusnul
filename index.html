@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan Kami</title>
+    <link rel="stylesheet"
+        href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet"
+        href="style/style.css?v=5">
+</head>
+
+<body>
+    <div class="loading-screen">
+        <div class="spinner">
+            <div class="heart-shape"></div>
+        </div>
+        <p>Memuat Undangan...</p>
+    </div>
+
+    <div class="envelope-section"
+        style="display: none;">
+        <div class=" envelope-wrapper">
+            <div
+                class="envelope animate__animated animate__zoomIn">
+                <div class="envelope-front">
+                    <div class="stamp"><i
+                            class="fas fa-heart"></i>
+                    </div>
+                    <div class="to-name">Kepada:
+                        <span
+                            id="guest-name">Anda</span>
+                    </div>
+                    <div class="hint">Klik untuk
+                        membuka</div>
+                </div>
+                <div class="envelope-back"></div>
+                <div class="envelope-flap"></div>
+            </div>
+            <div class="hearts"></div>
+        </div>
+    </div>
+
+    <div class="invitation-card-section"
+        style="display: none;">
+        <div class="invitation-card">
+            <div class="card-front">
+                <div
+                    class="card-decoration top-left">
+                </div>
+                <div
+                    class="card-decoration top-right">
+                </div>
+                <div
+                    class="card-decoration bottom-left">
+                </div>
+                <div
+                    class="card-decoration bottom-right">
+                </div>
+
+                <div class="card-content">
+                    <h1 class="couple-name">Jefri
+                        & Khusnul</h1>
+                    <p class="invitation-text">
+                        Dengan penuh kebahagiaan,
+                        kami mengundang Anda untuk
+                        hadir dalam acara
+                        pernikahan kami</p>
+                    <div
+                        class="open-invitation-btn">
+                        <span>Buka Undangan</span>
+                        <i
+                            class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wedding-landing"
+        style="display: none;">
+        <header class="wedding-header">
+            <div class="overlay"></div>
+            <div class="header-content">
+                <h3 class="intro-text"
+                    data-aos="fade-down"
+                    data-aos-delay="500">
+                    Pernikahan Dari</h3>
+                <h1 class="wedding-title"
+                    data-aos="zoom-in"
+                    data-aos-delay="700"
+                    data-aos-duration="1000">
+                    Jefri
+                    &
+                    Khusnul
+                </h1>
+                <p class="wedding-date"
+                    data-aos="fade-up"
+                    data-aos-delay="900">Akan
+                    melangsungkan akad pernikahan
+                    dalam:</p>
+                <div id="countdown-timer"
+                    class="countdown-timer">
+                    <div class="timer-box"
+                        data-aos="fade-up"
+                        data-aos-delay="1100">
+                        <span
+                            id="countdown-days">00</span>
+                        <p>Hari</p>
+                    </div>
+                    <div class="timer-box"
+                        data-aos="fade-up"
+                        data-aos-delay="1200">
+                        <span
+                            id="countdown-hours">00</span>
+                        <p>Jam</p>
+                    </div>
+                    <div class="timer-box"
+                        data-aos="fade-up"
+                        data-aos-delay="1300">
+                        <span
+                            id="countdown-minutes">00</span>
+                        <p>Menit</p>
+                    </div>
+                    <div class="timer-box"
+                        data-aos="fade-up"
+                        data-aos-delay="1400">
+                        <span
+                            id="countdown-seconds">00</span>
+                        <p>Detik</p>
+                    </div>
+                </div>
+                <p class="wedding-date"
+                    data-aos="fade-up"
+                    data-aos-delay="1500">Kamis,
+                    26
+                    Juni
+                    2025</p>
+                <div class="scroll-indicator"
+                    data-aos="fade"
+                    data-aos-delay="1700">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                    <span>Geser ke Bawah</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="verse-section">
+            <div class="verse-icon"
+                data-aos="zoom-in-down">
+                <i class="fas fa-book-open"></i>
+            </div>
+            <p class="verse-arabic"
+                data-aos="fade-up"
+                data-aos-delay="200">
+                وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ
+                مِنْ
+                أَنْفُسِكُمْ أَزْوَاجًا
+                لِتَسْكُنُوا
+                إِلَيْهَا وَجَعَلَ بَيْنَكُمْ
+                مَوَدَّةً
+                وَرَحْمَةً
+            </p>
+            <blockquote class="verse-text"
+                data-aos="fade-up"
+                data-aos-delay="400">
+                "Dan di antara tanda-tanda
+                kekuasaan-Nya
+                ialah Dia menciptakan untukmu
+                pasangan
+                hidup dari jenismu sendiri, supaya
+                kamu
+                mendapat ketenangan hati dan Dia
+                menjadikan kasih sayang di antara
+                kamu."
+            </blockquote>
+            <p class="verse-source"
+                data-aos="fade-up"
+                data-aos-delay="600">(QS. Ar-Rum:
+                21)</p>
+        </section>
+
+        <section class="couple-profile-section">
+            <h2 class="section-title script-font"
+                data-aos="fade-down">
+                Assalamualaikum Warahmatullahi
+                Wabarakatuh
+            </h2>
+            <p class="section-subtitle"
+                data-aos="fade-down"
+                data-aos-delay="200">
+                Dengan memohon rahmat dan ridho
+                Allah SWT,
+                kami bermaksud menyelenggarakan
+                pernikahan
+                putra-putri kami:
+            </p>
+            <div class="profiles-container">
+                <div id="groom-card"
+                    class="profile-card groom"
+                    data-aos="fade-right">
+                    <div class="profile-image-container"
+                        data-aos="zoom-in"
+                        data-aos-anchor="#groom-card"
+                        data-aos-delay="400">
+                        <img class="profile-image-man"
+                            src="assets/cowok-3.jpg"
+                            alt="Mempelai Pria Jefri"
+                            loading="lazy">
+                    </div>
+                    <h3 class="profile-name script-font"
+                        data-aos="fade-up"
+                        data-aos-anchor="#groom-card"
+                        data-aos-delay="600">
+                        Jefri Dwi Setiawan</h3>
+                    <p class="profile-parents"
+                        data-aos="fade-up"
+                        data-aos-anchor="#groom-card"
+                        data-aos-delay="700">
+                        Putra dari Bapak Suparto
+                        (Alm)
+                        <br>& Ibu Lami'ah
+                    </p>
+                    <p class="profile-address"
+                        data-aos="fade-up"
+                        data-aos-anchor="#groom-card"
+                        data-aos-delay="800">
+                        <i
+                            class="fas fa-map-marker-alt"></i>
+                        Dsn. Pelang, Ds. Pelang,
+                        Kec.
+                        Kembangbahu, Lamongan
+                    </p>
+                </div>
+                <div class="profile-separator script-font"
+                    data-aos="zoom-in"
+                    data-aos-delay="500">
+                    &</div>
+                <div id="bride-card"
+                    class="profile-card bride"
+                    data-aos="fade-left">
+                    <div class="profile-image-container"
+                        data-aos="zoom-in"
+                        data-aos-anchor="#bride-card"
+                        data-aos-delay="400">
+                        <img src="assets/cewek-2.jpg"
+                            alt="Mempelai Wanita Khusnul"
+                            loading="lazy">
+                    </div>
+                    <h3 class="profile-name script-font"
+                        data-aos="fade-up"
+                        data-aos-anchor="#bride-card"
+                        data-aos-delay="600">
+                        Khusnul Khotimah</h3>
+                    <p class="profile-parents"
+                        data-aos="fade-up"
+                        data-aos-anchor="#bride-card"
+                        data-aos-delay="700">
+                        Putri dari Bapak Suwar
+                        <br>& Ibu
+                        Sartini
+                    </p>
+                    <p class="profile-address"
+                        data-aos="fade-up"
+                        data-aos-anchor="#bride-card"
+                        data-aos-delay="800">
+                        <i
+                            class="fas fa-map-marker-alt"></i>
+                        Dsn. Kedungbulu, Ds.
+                        Dumpiagung,
+                        Kec. Kembangbahu, Lamongan
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h2 class="section-title script-font"
+                data-aos="fade-up">
+                Momen
+                Bahagia Kami</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item item-1"
+                    data-aos="zoom-in-up"
+                    data-aos-duration="1200">
+                    <img src="assets/Gallery/1-edit.jpg"
+                        alt="Galeri Foto 1"
+                        loading="lazy">
+                </div>
+                <div class="gallery-item item-2"
+                    data-aos="fade-left"
+                    data-aos-easing="ease-in-out-sine"
+                    data-aos-duration="1000">
+                    <img src="assets/Gallery/2-edit.jpg"
+                        alt="Galeri Foto 2"
+                        loading="lazy">
+                </div>
+                <div class="gallery-item gallery-text-item"
+                    data-aos="fade"
+                    data-aos-delay="500">
+                    <p class="gallery-quote">
+                        "Cinta adalah
+                        ketika kebahagiaan orang
+                        lain
+                        lebih penting dari
+                        kebahagiaanmu
+                        sendiri."</p>
+                    <span
+                        class="gallery-signature">-
+                        H.
+                        Jackson Brown, Jr.</span>
+                </div>
+                <div class="gallery-item item-3"
+                    data-aos="fade-right"
+                    data-aos-easing="ease-in-out-sine"
+                    data-aos-duration="1000">
+                    <img src="assets/Gallery/3-edit.jpg"
+                        alt="Galeri Foto 3"
+                        loading="lazy">
+                </div>
+                <div class="gallery-item item-4"
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1500">
+                    <img src="assets/Gallery/4-edit.jpg"
+                        alt="Galeri Foto 4"
+                        loading="lazy">
+                </div>
+                <div class="gallery-item item-5"
+                    data-aos="flip-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200">
+                    <img src="assets/Gallery/5-edit.jpg"
+                        alt="Galeri Foto 5"
+                        loading="lazy">
+                </div>
+                <div class="gallery-item item-6"
+                    data-aos="zoom-out"
+                    data-aos-duration="1000">
+                    <img src="assets/Gallery/6-edit.jpg"
+                        alt="Galeri Foto 6"
+                        loading="lazy">
+                </div>
+                <div class="gallery-item item-7"
+                    data-aos="fade-up-right"
+                    data-aos-duration="1200">
+                    <img src="assets/Gallery/1-edit.jpg"
+                        alt="Galeri Foto 7"
+                        loading="lazy">
+                </div>
+                <div class="gallery-item item-8"
+                    data-aos="fade-up-left"
+                    data-aos-delay="200"
+                    data-aos-duration="1200">
+                    <img src="assets/Gallery/2-edit.jpg"
+                        alt="Galeri Foto 8"
+                        loading="lazy">
+                </div>
+                <div class="gallery-item item-9"
+                    data-aos="zoom-out-right"
+                    data-aos-duration="1500">
+                    <img src="assets/Gallery/3-edit.jpg"
+                        alt="Galeri Foto 9"
+                        loading="lazy">
+                </div>
+                <div class="gallery-item item-10"
+                    data-aos="zoom-out-left"
+                    data-aos-delay="200"
+                    data-aos-duration="1500">
+                    <img src="assets/Gallery/4-edit.jpg"
+                        alt="Galeri Foto 10"
+                        loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section class="event-info-section">
+            <h2 class="section-title script-font"
+                data-aos="fade-down">
+                Informasi Acara</h2>
+            <div class="event-frame"
+                data-aos="zoom-in-up">
+                <div class="event-card"
+                    data-aos="fade-up"
+                    data-aos-delay="300">
+                    <div class="event-icon"><i
+                            class="fas fa-glass-cheers"></i>
+                    </div>
+                    <h3
+                        class="event-title script-font">
+                        Ngunduh Mantu</h3>
+                    <p class="event-date">Kamis
+                        Wage, 26 Juni 2025
+                    </p>
+                    <p class="event-time">Pukul
+                        13.00 - Selesai
+                    </p>
+                    <p class="event-location">
+                        <i
+                            class="fas fa-map-marker-alt"></i>
+                        Kediaman Mempelai Pria -
+                        Dsn. Pelang Ds. Pelang
+                        Kembangbahu Lamongan
+                    </p>
+                </div>
+                <div class="event-actions"
+                    data-aos="zoom-in"
+                    data-aos-delay="400">
+                    <a href="https://maps.app.goo.gl/ZF5nGT1HuXKaY3LH6"
+                        target="_blank"
+                        class="cta-button">Lihat
+                        Peta Lokasi</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="rsvp-section">
+            <h2 class="section-title script-font"
+                data-aos="fade-up">
+                Konfirmasi Kehadiran</h2>
+            <p class="section-subtitle"
+                data-aos="fade-up"
+                data-aos-delay="100">
+                Merupakan suatu kehormatan dan
+                kebahagiaan
+                bagi kami apabila
+                Bapak/Ibu/Saudara/i
+                berkenan hadir untuk memberikan
+                doa restu.
+            </p>
+            <div class="rsvp-container"
+                data-aos="zoom-in-up"
+                data-aos-delay="200">
+                <div id="rsvp-initial-choice"
+                    class="rsvp-initial-choice">
+                    <p class="rsvp-question">
+                        Apakah Anda
+                        akan hadir?</p>
+                    <p class="gift-info">Bagi
+                        Bapak/Ibu/Saudara/i yang
+                        tidak dapat hadir, kami
+                        menyediakan kemudahan
+                        untuk mengirimkan hadiah
+                        secara online melalui
+                        tautan yang tersedia di
+                        bawah pilihan "Maaf, tidak
+                        bisa".</p>
+                    <div class="buttons">
+                        <button class="choice-btn"
+                            id="btn-attend-yes">
+                            <i
+                                class="fas fa-check-circle"></i>
+                            Ya, saya akan hadir
+                        </button>
+                        <button class="choice-btn"
+                            id="btn-attend-no">
+                            <i
+                                class="fas fa-times-circle"></i>
+                            Maaf, tidak bisa
+                        </button>
+                    </div>
+                </div>
+                <form id="rsvp-form-yes"
+                    class="rsvp-form"
+                    style="display: none;">
+                    <p class="form-title">Silakan
+                        isi data
+                        diri Anda</p>
+                    <div class="form-group">
+                        <label for="name-yes">Nama
+                            Lengkap</label>
+                        <input type="text"
+                            id="name-yes"
+                            name="name-yes"
+                            placeholder="Tuliskan nama Anda..."
+                            required>
+                    </div>
+                    <button type="submit"
+                        class="cta-button">
+                        <span
+                            class="button-text">Kirim
+                            Konfirmasi</span>
+                        <span
+                            class="button-loader"></span>
+                    </button>
+                </form>
+                <form id="rsvp-form-no"
+                    class="rsvp-form"
+                    style="display: none;">
+                    <p class="form-title">Terima
+                        kasih atas
+                        informasinya.</p>
+                    <div class="form-group">
+                        <label for="name-no">Nama
+                            Lengkap</label>
+                        <input type="text"
+                            id="name-no"
+                            name="name-no"
+                            placeholder="Tuliskan nama Anda..."
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label
+                            for="wishes-no">Ucapan
+                            &
+                            Doa</label>
+                        <textarea id="wishes-no"
+                            name="wishes-no"
+                            rows="4"
+                            placeholder="Tuliskan ucapan dan doa Anda untuk kami..."></textarea>
+                    </div>
+                    <p class="gift-intro">Doa
+                        restu Anda adalah
+                        hadiah terindah. Namun
+                        jika ingin
+                        mengirimkan tanda kasih,
+                        dapat melalui:
+                    </p>
+                    <div class="gift-accounts">
+                        <div class="gift-account">
+                            <div
+                                class="account-logo bri">
+                                BRI
+                            </div>
+                            <div
+                                class="account-details">
+                                <span
+                                    class="account-number"
+                                    id="bri-number">058301040567501</span>
+                                <span
+                                    class="account-name">Jefri Dwi Setiawan</span>
+                            </div>
+                            <button type="button"
+                                class="copy-btn"
+                                data-copy-text="631001016949530"><i
+                                    class="fas fa-copy"></i>
+                                Salin</button>
+                        </div>
+                    </div>
+                    <div class="gift-steps">
+                        <p class="steps-title">
+                            Cara Mengirim Hadiah:
+                        </p>
+                        <ol class="steps-list">
+                            <li>Pilih salah satu
+                                akun (DANA atau
+                                BRI) dan klik
+                                tombol "Salin".
+                            </li>
+                            <li>Buka aplikasi
+                                perbankan atau
+                                dompet digital
+                                Anda.</li>
+                            <li>Lakukan transfer
+                                ke nomor yang
+                                sudah Anda salin.
+                            </li>
+                            <li>Setelah selesai,
+                                Anda dapat
+                                melanjutkan untuk
+                                mengirim ucapan di
+                                bawah ini.</li>
+                        </ol>
+                    </div>
+                    <button type="submit"
+                        id="submit-ucapan"
+                        class="cta-button">
+                        <span
+                            class="button-text">Kirim
+                            Ucapan</span>
+                        <span
+                            class="button-loader"></span>
+                    </button>
+                </form>
+                <div id="rsvp-success-message"
+                    class="rsvp-success-message"
+                    style="display: none;">
+                    <i class="fas fa-heart"></i>
+                    <p>Terima kasih banyak atas
+                        konfirmasi
+                        dan doa restu Anda!</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="wedding-footer">
+            <div class="footer-content"
+                data-aos="fade-up">
+                <p class="thank-you-message">
+                    Atas kehadiran dan doa restu
+                    yang
+                    telah diberikan oleh
+                    Bapak/Ibu/Saudara/i, kami
+                    mengucapkan
+                    terima kasih yang tulus.
+                    Semoga
+                    langkah kami ke depan
+                    senantiasa
+                    diiringi oleh kebahagiaan dan
+                    keberkahan dari Tuhan Yang
+                    Maha Esa.
+                </p>
+                <p
+                    class="couple-signature script-font">
+                    Jefri & Khusnul
+                </p>
+            </div>
+            <hr class="footer-separator"
+                data-aos="zoom-in">
+            <div class="creator-credit"
+                data-aos="fade-up"
+                data-aos-delay="200">
+                <p class="creator-title">Dibuat
+                    dengan ❤️
+                    oleh:</p>
+                <p class="creator-name">Bagas
+                    Berlian Tri
+                    Cahyono</p>
+                <div class="creator-socials">
+                    <a href="https://www.instagram.com/bbagaass_/"
+                        target="_blank"
+                        aria-label="Instagram Bagas">
+                        <i
+                            class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/6282132920175"
+                        target="_blank"
+                        aria-label="WhatsApp Bagas">
+                        <i
+                            class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="music-control">
+        <button id="music-toggle"><i
+                class="fas fa-music"></i> Putar
+            Musik</button>
+        <audio id="wedding-music" loop>
+            <source
+                src="audio/I Choose You The Wedding Song  Ryann Darling Original  On iTunes & Spotify.mp3"
+                type="audio/mpeg">
+        </audio>
+    </div>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script
+        src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
