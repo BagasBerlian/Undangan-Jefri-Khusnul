@@ -15,75 +15,19 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <link rel="stylesheet"
-        href="style/style.css?v=5">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preload" href="assets/header-4.jpg"
+        as="image">
 </head>
 
 <body>
     <div class="loading-screen">
         <div class="spinner">
-            <div class="heart-shape"></div>
+            <span class="initial">J</span>
+            <span class="ampersand">&</span>
+            <span class="initial">K</span>
         </div>
         <p>Memuat Undangan...</p>
-    </div>
-
-    <div class="envelope-section"
-        style="display: none;">
-        <div class=" envelope-wrapper">
-            <div
-                class="envelope animate__animated animate__zoomIn">
-                <div class="envelope-front">
-                    <div class="stamp"><i
-                            class="fas fa-heart"></i>
-                    </div>
-                    <div class="to-name">Kepada:
-                        <span
-                            id="guest-name">Anda</span>
-                    </div>
-                    <div class="hint">Klik untuk
-                        membuka</div>
-                </div>
-                <div class="envelope-back"></div>
-                <div class="envelope-flap"></div>
-            </div>
-            <div class="hearts"></div>
-        </div>
-    </div>
-
-    <div class="invitation-card-section"
-        style="display: none;">
-        <div class="invitation-card">
-            <div class="card-front">
-                <div
-                    class="card-decoration top-left">
-                </div>
-                <div
-                    class="card-decoration top-right">
-                </div>
-                <div
-                    class="card-decoration bottom-left">
-                </div>
-                <div
-                    class="card-decoration bottom-right">
-                </div>
-
-                <div class="card-content">
-                    <h1 class="couple-name">Jefri
-                        & Khusnul</h1>
-                    <p class="invitation-text">
-                        Dengan penuh kebahagiaan,
-                        kami mengundang Anda untuk
-                        hadir dalam acara
-                        pernikahan kami</p>
-                    <div
-                        class="open-invitation-btn">
-                        <span>Buka Undangan</span>
-                        <i
-                            class="fas fa-arrow-right"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
     <div class="wedding-landing"
@@ -91,23 +35,40 @@
         <header class="wedding-header">
             <div class="overlay"></div>
             <div class="header-content">
-                <h3 class="intro-text"
+                <h4 class="formal-opening"
                     data-aos="fade-down"
-                    data-aos-delay="500">
-                    Pernikahan Dari</h3>
+                    data-aos-delay="300">
+                    Bismillahirrohmanirrohim
+                </h4>
+
+                <p class="invitation-paragraph"
+                    data-aos="fade-down"
+                    data-aos-delay="400">
+                    Dengan memohon Rahmat dan
+                    Ridho Allah SWT,
+                    kami mengundang
+                    <span
+                        id="guest-name-span">Bapak/Ibu/Saudara/i</span>,
+                    untuk menghadiri acara
+                    Pernikahan kami:
+                </p>
+
                 <h1 class="wedding-title"
                     data-aos="zoom-in"
-                    data-aos-delay="700"
+                    data-aos-delay="600"
                     data-aos-duration="1000">
-                    Jefri
-                    &
-                    Khusnul
+                    Jefri & Khusnul
                 </h1>
+
                 <p class="wedding-date"
                     data-aos="fade-up"
-                    data-aos-delay="900">Akan
-                    melangsungkan akad pernikahan
-                    dalam:</p>
+                    data-aos-delay="800">
+                    Insya Allah akan
+                    diselenggarakan pada:
+                    <br>
+                    <strong>Kamis, 26 Juni
+                        2025</strong>
+                </p>
                 <div id="countdown-timer"
                     class="countdown-timer">
                     <div class="timer-box"
@@ -285,106 +246,6 @@
             </div>
         </section>
 
-        <section class="gallery-section">
-            <h2 class="section-title script-font"
-                data-aos="fade-up">
-                Momen
-                Bahagia Kami</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item item-1"
-                    data-aos="zoom-in-up"
-                    data-aos-duration="1200">
-                    <img src="assets/Gallery/1-edit.jpg"
-                        alt="Galeri Foto 1"
-                        loading="lazy">
-                </div>
-                <div class="gallery-item item-2"
-                    data-aos="fade-left"
-                    data-aos-easing="ease-in-out-sine"
-                    data-aos-duration="1000">
-                    <img src="assets/Gallery/2-edit.jpg"
-                        alt="Galeri Foto 2"
-                        loading="lazy">
-                </div>
-                <div class="gallery-item gallery-text-item"
-                    data-aos="fade"
-                    data-aos-delay="500">
-                    <p class="gallery-quote">
-                        "Cinta adalah
-                        ketika kebahagiaan orang
-                        lain
-                        lebih penting dari
-                        kebahagiaanmu
-                        sendiri."</p>
-                    <span
-                        class="gallery-signature">-
-                        H.
-                        Jackson Brown, Jr.</span>
-                </div>
-                <div class="gallery-item item-3"
-                    data-aos="fade-right"
-                    data-aos-easing="ease-in-out-sine"
-                    data-aos-duration="1000">
-                    <img src="assets/Gallery/3-edit.jpg"
-                        alt="Galeri Foto 3"
-                        loading="lazy">
-                </div>
-                <div class="gallery-item item-4"
-                    data-aos="flip-left"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-duration="1500">
-                    <img src="assets/Gallery/4-edit.jpg"
-                        alt="Galeri Foto 4"
-                        loading="lazy">
-                </div>
-                <div class="gallery-item item-5"
-                    data-aos="flip-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="200">
-                    <img src="assets/Gallery/5-edit.jpg"
-                        alt="Galeri Foto 5"
-                        loading="lazy">
-                </div>
-                <div class="gallery-item item-6"
-                    data-aos="zoom-out"
-                    data-aos-duration="1000">
-                    <img src="assets/Gallery/6-edit.jpg"
-                        alt="Galeri Foto 6"
-                        loading="lazy">
-                </div>
-                <div class="gallery-item item-7"
-                    data-aos="fade-up-right"
-                    data-aos-duration="1200">
-                    <img src="assets/Gallery/1-edit.jpg"
-                        alt="Galeri Foto 7"
-                        loading="lazy">
-                </div>
-                <div class="gallery-item item-8"
-                    data-aos="fade-up-left"
-                    data-aos-delay="200"
-                    data-aos-duration="1200">
-                    <img src="assets/Gallery/2-edit.jpg"
-                        alt="Galeri Foto 8"
-                        loading="lazy">
-                </div>
-                <div class="gallery-item item-9"
-                    data-aos="zoom-out-right"
-                    data-aos-duration="1500">
-                    <img src="assets/Gallery/3-edit.jpg"
-                        alt="Galeri Foto 9"
-                        loading="lazy">
-                </div>
-                <div class="gallery-item item-10"
-                    data-aos="zoom-out-left"
-                    data-aos-delay="200"
-                    data-aos-duration="1500">
-                    <img src="assets/Gallery/4-edit.jpg"
-                        alt="Galeri Foto 10"
-                        loading="lazy">
-                </div>
-            </div>
-        </section>
-
         <section class="event-info-section">
             <h2 class="section-title script-font"
                 data-aos="fade-down">
@@ -417,7 +278,7 @@
                 <div class="event-actions"
                     data-aos="zoom-in"
                     data-aos-delay="400">
-                    <a href="https://maps.app.goo.gl/ZF5nGT1HuXKaY3LH6"
+                    <a href="https://maps.app.goo.gl/y4n72S9z4y54a1Wc9"
                         target="_blank"
                         class="cta-button">Lihat
                         Peta Lokasi</a>
@@ -544,7 +405,7 @@
                             </div>
                             <button type="button"
                                 class="copy-btn"
-                                data-copy-text="631001016949530"><i
+                                data-copy-text="058301040567501"><i
                                     class="fas fa-copy"></i>
                                 Salin</button>
                         </div>
@@ -602,7 +463,7 @@
                     Atas kehadiran dan doa restu
                     yang
                     telah diberikan oleh
-                    Bapak/Ibu/Saudara/i, kami
+                    B Bapak/Ibu/Saudara/i, kami
                     mengucapkan
                     terima kasih yang tulus.
                     Semoga

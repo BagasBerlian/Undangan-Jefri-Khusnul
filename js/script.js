@@ -7,10 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   gsap.registerPlugin(ScrollTrigger);
 
-  // This function now directly loads the main landing page.
   function startWebsite() {
     gsap.to(loadingScreen, {
-      duration: 1.5, // A little fade time
+      duration: 1.5,
       opacity: 0,
       onComplete: () => {
         loadingScreen.style.display = "none";
@@ -30,7 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
           })
           .catch((error) => {
             console.error("Autoplay was prevented:", error);
-            // Browser prevented autoplay, user must click to start.
             musicToggle.innerHTML = '<i class="fas fa-music"></i> Putar Musik';
           });
       }
@@ -41,7 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function setupMusicPlayer() {
-    // Attempt to play music as soon as the user interacts (by opening the page)
     toggleMusicPlayback();
     musicToggle.addEventListener("click", toggleMusicPlayback);
   }
@@ -50,22 +47,23 @@ document.addEventListener("DOMContentLoaded", function () {
     const urlParams = new URLSearchParams(window.location.search);
     const p = urlParams.get("p");
     const n = urlParams.get("n");
-    let guestName = "Anda";
+    let guest = "Bapak/Ibu/Saudara/i"; // Teks default
+
     if (p && n) {
-      guestName = `${p} ${n}`;
+      guest = `${p} ${n}`; // Jika ada parameter p dan n
     } else if (n) {
-      guestName = n;
+      guest = n; // Jika hanya ada parameter n
     }
-    // Update the guest name in the (now hidden) envelope section
-    const guestNameSpan = document.getElementById("guest-name");
+
+    const guestNameSpan = document.getElementById("guest-name-span");
     if (guestNameSpan) {
-      guestNameSpan.textContent = guestName;
+      guestNameSpan.textContent = guest;
     }
   }
 
   function showLandingPage() {
     weddingLanding.style.display = "block";
-    musicControl.style.display = "block"; // Make music control visible
+    musicControl.style.display = "block";
 
     gsap.fromTo(
       weddingLanding,
@@ -91,16 +89,32 @@ document.addEventListener("DOMContentLoaded", function () {
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
       const format = (num) => (num < 10 ? "0" + num : num);
+
       if (distance < 0) {
         clearInterval(countdown);
-        document.getElementById("countdown-timer").innerHTML =
-          "<div class='timer-box' style='width:100%;'><h3>Acara Telah Dimulai</h3></div>";
+        const timerElement = document.getElementById("countdown-timer");
+        const dateElements = document.querySelectorAll(".wedding-date");
+        if (timerElement) {
+          timerElement.innerHTML =
+            "<div class='timer-box' style='width:100%;'><h3>Acara Telah Berlangsung</h3></div>";
+        }
+        dateElements.forEach((el) => {
+          if (el.textContent.includes("Menuju Hari Bahagia")) {
+            el.style.display = "none";
+          }
+        });
         return;
       }
-      document.getElementById("countdown-days").innerText = format(days);
-      document.getElementById("countdown-hours").innerText = format(hours);
-      document.getElementById("countdown-minutes").innerText = format(minutes);
-      document.getElementById("countdown-seconds").innerText = format(seconds);
+
+      const elDays = document.getElementById("countdown-days");
+      const elHours = document.getElementById("countdown-hours");
+      const elMinutes = document.getElementById("countdown-minutes");
+      const elSeconds = document.getElementById("countdown-seconds");
+
+      if (elDays) elDays.innerText = format(days);
+      if (elHours) elHours.innerText = format(hours);
+      if (elMinutes) elMinutes.innerText = format(minutes);
+      if (elSeconds) elSeconds.innerText = format(seconds);
     }, 1000);
   }
 
@@ -128,18 +142,20 @@ document.addEventListener("DOMContentLoaded", function () {
       );
     };
 
-    btnYes.addEventListener("click", () => showForm(formYes));
-    btnNo.addEventListener("click", () => showForm(formNo));
+    if (btnYes) btnYes.addEventListener("click", () => showForm(formYes));
+    if (btnNo) btnNo.addEventListener("click", () => showForm(formNo));
 
     const showSuccess = () => {
-      formYes.style.display = "none";
-      formNo.style.display = "none";
-      successMessage.style.display = "block";
-      gsap.fromTo(
-        successMessage,
-        { autoAlpha: 0, scale: 0.8 },
-        { duration: 0.7, autoAlpha: 1, scale: 1, ease: "back.out(1.7)" }
-      );
+      if (formYes) formYes.style.display = "none";
+      if (formNo) formNo.style.display = "none";
+      if (successMessage) {
+        successMessage.style.display = "block";
+        gsap.fromTo(
+          successMessage,
+          { autoAlpha: 0, scale: 0.8 },
+          { duration: 0.7, autoAlpha: 1, scale: 1, ease: "back.out(1.7)" }
+        );
+      }
     };
 
     const handleFormSubmit = (form, e) => {
@@ -168,8 +184,10 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     };
 
-    formYes.addEventListener("submit", (e) => handleFormSubmit(formYes, e));
-    formNo.addEventListener("submit", (e) => handleFormSubmit(formNo, e));
+    if (formYes)
+      formYes.addEventListener("submit", (e) => handleFormSubmit(formYes, e));
+    if (formNo)
+      formNo.addEventListener("submit", (e) => handleFormSubmit(formNo, e));
 
     document.querySelectorAll(".copy-btn").forEach((button) => {
       button.addEventListener("click", () => {
@@ -199,6 +217,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 100);
   }
 
-  // Initial call to start the website flow
   startWebsite();
 });
